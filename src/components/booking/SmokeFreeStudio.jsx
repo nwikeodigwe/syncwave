@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const SmokeFreeStudio = () => {
   return (
     <div className="grid grid-cols-5">
-      <div className="col-span-5 flex flex-col items-center justify-center p-5 bg-black text-white">
+      <div className="col-span-5 flex flex-col items-center justify-center p-5 bg-primary text-white">
         <h1 className="uppercase text-2xl font-bold font-bungee">
           Smoking free studio time
         </h1>

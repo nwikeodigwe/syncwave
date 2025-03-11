@@ -21,7 +21,7 @@
 }
 
 .discount {
-  @apply relative h-screen bg-[url('/images/discount.jpg')] bg-no-repeat bg-cover bg-center grayscale flex flex-col justify-center items-center text-white;
+  @apply relative h-screen bg-[url('/images/discount.jpg')] bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center text-white;
 }
 
 .testimonial {

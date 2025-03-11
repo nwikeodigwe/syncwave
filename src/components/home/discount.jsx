@@ -3,8 +3,8 @@ import { Link } from "react-router";
 const Discount = () => {
   return (
     <section className="discount">
-      <div className="overlay"></div>
-      <div className="flex flex-col items-center gap-10 z-10">
+      <div className="overlay grayscale"></div>
+      <div className="flex flex-col items-center gap-10 z-20">
         <h1 className="text-4xl font-bold font-bungee">
           Discount and weeknights sessions
         </h1>

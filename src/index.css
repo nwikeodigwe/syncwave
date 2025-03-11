@@ -32,7 +32,7 @@ body {
 }
 
 .overlay {
-  @apply absolute h-full w-full inset-0 bg-secondary;
+  @apply absolute h-full w-full inset-0 bg-primary/60;
 }
 
 section {
@@ -80,7 +80,7 @@ section {
 }
 
 .btn-white {
-  @apply bg-zinc-300 bg-white text-secondary;
+  @apply bg-white text-primary;
 }
 
 .btn-transparent {

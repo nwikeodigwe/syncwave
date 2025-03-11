@@ -9,7 +9,7 @@ const Footer = (props) => {
     </li>
   ));
   return (
-    <footer className="footer bg-primary">
+    <footer className="flex flex-col gap-7 items-center pt-14 pb-3  bg-primary">
       <div>
         <ul className="flex gap-4">{navLinks}</ul>
       </div>
@@ -17,7 +17,7 @@ const Footer = (props) => {
         <p className="text-sm text-gray-200">
           GMB Studio, WoodStock, Capetown, 7625
         </p>
-        <p className="text-sm font-light text-gray-500">All rights reserved</p>
+        <p className="text-sm font-light text-white/50">All rights reserved</p>
       </div>
     </footer>
   );

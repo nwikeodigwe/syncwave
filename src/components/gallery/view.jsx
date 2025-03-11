@@ -22,14 +22,14 @@ const View = () => {
   return (
     <section className="">
       <div className="container max-w-screen-lg mx-auto flex flex-col gap-8">
-        <h1 className="title text-4xl text-center">Gallery</h1>
+        <h1 className="title text-4xl text-center text-primary">Gallery</h1>
         <p className="text-center">
           Explore the exciting world of GMB Recording Studio, known as the
           top-rated recording studio in Capetown, through our engaging photo
           gallery.
         </p>
         <div className="gallery-images">{images}</div>
-        <h2 className="text-2xl font-bungee mt-16">
+        <h2 className="text-2xl font-bungee mt-16 text-primary">
           Unique Features of MIX Recording Studio
         </h2>
         <ul className="list-disc">

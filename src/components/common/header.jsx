@@ -10,11 +10,7 @@ const Header = (props) => {
   return (
     <nav>
       <div className="flex justify-between items-center px-10">
-        <img
-          src="/images/logo.png"
-          alt="logo"
-          className="h-24 w-32 grayscale hover:grayscale-0"
-        />
+        <img src="/images/logo.png" alt="logo" className="h-24 w-32" />
         <div className="flex gap-4">{navLinks}</div>
       </div>
     </nav>

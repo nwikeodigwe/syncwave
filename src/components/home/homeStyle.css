@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.socials {
+  @apply flex justify-between items-center my-3;
+}
+
+.socials-list {
+  @apply flex gap-4;
+}
+
+.socials-list li {
+  @apply text-4xl;
+}
+
+.about {
+  @apply flex my-10;
+}
+
+.about-recording {
+  @apply bg-[url('/images/recording2.png')] h-[350px] w-[350px] bg-no-repeat bg-cover bg-center flex justify-center items-center rounded-full shadow-lg col-span-2 border border-gray-300;
+}
+
+.discount {
+  @apply relative h-screen bg-[url('/images/discount.jpg')] bg-no-repeat bg-cover bg-center grayscale flex flex-col justify-center items-center text-white;
+}
+
+.testimonial {
+  @apply flex flex-col gap-4;
+}
+
+.tab {
+  @apply flex flex-col;
+}
+
+.tab .tab-title {
+  @apply flex gap-1 cursor-pointer items-center p-4;
+}
+
+.tab > .tab-title > h2 {
+  @apply text-base font-bold;
+}
+
+.tab .content {
+  @apply flex flex-col gap-4 p-4 border border-gray-500;
+}
+
+.tab .tab-content p {
+  @apply text-base;
+}

@@ -1,0 +1,7 @@
+.input {
+  @apply border border-gray-200 p-4 focus:border-black/50 focus:outline rounded-sm;
+}
+
+.select {
+  @apply border border-gray-200 p-4 focus:border-black/50 focus:outline rounded-sm;
+}

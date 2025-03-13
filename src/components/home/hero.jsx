@@ -1,5 +1,6 @@
 // Hero.jsx
 import Socials from "./socials";
+import { Link } from "react-router";
 
 export default function Hero() {
   return (
@@ -18,9 +19,9 @@ export default function Hero() {
             </p>
             <Socials />
             <div>
-              <button className="hover:scale-105 transition-all duration-300 border-2 border-white text-white font-bold px-10 py-4 hover:bg-gray/90 shadow-lg rounded-sm md:text-2xl">
+              <Link className="hover:scale-105 transition-all duration-300 border-2 border-white text-white font-bold px-10 py-4 hover:bg-gray/90 shadow-lg rounded-sm md:text-2xl">
                 Book now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@
 }
 
 body {
-  @apply font-courier text-secondary bg-primary/10 leading-tight;
+  @apply font-courier text-secondary bg-primary/10 leading-tight font-semibold;
 }
 
 section {

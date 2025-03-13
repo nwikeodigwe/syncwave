@@ -26,8 +26,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-recording ">
-            <div className="hover:bg-transparent bg-primary/30 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0 h-[350px] w-[350px] rounded-full"></div>
+          <div className="about-recording flex justify-center items-center rounded-full shadow-lg col-span-2 hover:-translate-y-1 transition-all duration-300 grayscale hover:grayscale-0">
+            <div className="h-[350px] w-[350px]"></div>
           </div>
         </div>
       </div>

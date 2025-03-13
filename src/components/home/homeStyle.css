@@ -9,7 +9,7 @@
 }
 
 .about-recording {
-  @apply bg-[url('/images/recording2.png')] h-[350px] w-[350px] bg-no-repeat bg-cover bg-center flex justify-center items-center rounded-full shadow-lg col-span-2 border border-gray-300;
+  @apply bg-[url('/images/recording2.png')] bg-no-repeat bg-cover bg-center;
 }
 
 .discount {

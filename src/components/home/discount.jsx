@@ -11,7 +11,7 @@ const Discount = () => {
           </h1>
           <Link
             to="/bookings"
-            className="btn btn-primary btn-lg shadow-2xl hover:scale-105 transition-all duration-300 z-10"
+            className="btn btn-primary btn-lg shadow-2xl hover:-translate-y-1 transition-all duration-300 z-10"
           >
             Explore deals
           </Link>

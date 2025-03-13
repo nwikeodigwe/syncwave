@@ -6,7 +6,7 @@ const Footer = ({ links }) => {
     <Link
       key={index}
       to={link.href}
-      className="mdborder-2 border-white text-white/90 md:text-white px-4 py-2 text-center hover:scale-105 transition-all duration-300 rounded-sm"
+      className="mdborder-2 border-white text-white/90 md:text-white px-4 py-2 text-center hover:-translate-y-1 transition-all duration-300 rounded-sm"
     >
       {link.text}
     </Link>

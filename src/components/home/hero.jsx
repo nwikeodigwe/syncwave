@@ -14,13 +14,15 @@ export default function Hero() {
               <span className="text-secondary">production</span>?
             </h1>
             <p className="font-bold md:text-xl leading-tight">
-              GMB SYNCWAVE is one of the top capetown recording studios, made
-              for artists by artists.{" "}
+              GMB Syncwave studio is one of the top capetown recording studios,
+              made for artists by artists.{" "}
             </p>
             <Socials />
             <div>
-              <Link className="hover:scale-105 transition-all duration-300 border-2 border-white text-white font-bold px-10 py-4 hover:bg-gray/90 shadow-lg rounded-sm md:text-2xl">
-                Book now
+              <Link to="/booking">
+                <button className="hover:-translate-y-1 transition-all duration-300 border-2 border-white text-white font-bold py-2 px-5 hover:bg-gray/90 shadow-lg rounded-sm md:text-xl">
+                  Book now
+                </button>
               </Link>
             </div>
           </div>

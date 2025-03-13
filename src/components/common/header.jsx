@@ -26,7 +26,7 @@ const Header = (props) => {
     <NavLink
       key={index}
       to={link.href}
-      className="md:p-1 text-center md:border-2 md:border-primary md:rounded-sm font-bold md:text-base text-2xl text-primary hover:scale-105 transition-all duration-300 md:shadow-lg"
+      className="md:p-1 text-center md:border-2 md:border-primary md:rounded-sm font-bold md:text-base text-2xl text-primary hover:-translate-y-1 transition-all duration-300 md:shadow-lg"
     >
       {link.text}
     </NavLink>

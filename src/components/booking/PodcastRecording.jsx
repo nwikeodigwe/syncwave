@@ -96,7 +96,7 @@ const PodcastRecording = () => {
       <div className="col-span-5 flex justify-center mt-16">
         <Link
           to="/bookings/podcast_recording"
-          className="btn btn-transparent text-xl"
+          className="btn btn-transparent text-xl hover:-translate-y-1 transition-all duration-300"
         >
           Book Now
         </Link>

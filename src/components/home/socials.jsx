@@ -12,49 +12,79 @@ const socialLinks = [
   {
     name: "Facebook",
     link: "https://www.facebook.com/gmbsyncwave",
-    icon: <FaFacebookSquare className="hover:text-facebook" size={40} />,
+    icon: (
+      <FaFacebookSquare
+        className="hover:text-facebook hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
   {
     name: "Instagram",
     link: "https://www.instagram.com/gmbsyncwave",
-    icon: <FaSquareInstagram className="hover:text-instagram" size={40} />,
+    icon: (
+      <FaSquareInstagram
+        className="hover:text-instagram hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
   {
     name: "Twitter",
     link: "https://www.twitter.com/gmbsyncwave",
-    icon: <FaTwitterSquare className="hover:text-twitter" size={40} />,
+    icon: (
+      <FaTwitterSquare
+        className="hover:text-twitter hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
   {
     name: "Youtube",
     link: "https://www.youtube.com/gmbsyncwave",
-    icon: <IoLogoYoutube className="hover:text-youtube" size={40} />,
+    icon: (
+      <IoLogoYoutube
+        className="hover:text-youtube hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
   {
     name: "TikTok",
     link: "https://www.tiktok.com/gmbsyncwave",
-    icon: <AiFillTikTok className="hover:text-tiktok" size={40} />,
+    icon: (
+      <AiFillTikTok
+        className="hover:text-tiktok hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
   {
     name: "Spotify",
     link: "https://www.spotify.com/gmbsyncwave",
-    icon: <BsSpotify className="hover:text-spotify" size={40} />,
+    icon: (
+      <BsSpotify
+        className="hover:text-spotify hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
   {
     name: "Apple Music",
     link: "https://www.apple.com/music/gmbsyncwave",
-    icon: <SiApplemusic className="hover:text-applemusic" size={40} />,
+    icon: (
+      <SiApplemusic
+        className="hover:text-applemusic hover:-translate-y-1 transition-all duration-300"
+        size={40}
+      />
+    ),
   },
 ];
 
 const Socials = () => {
   const social = socialLinks.map((link, index) => (
     <div key={index}>
-      <Link
-        className="hover:text-facebook hover:scale-125 transition-all duration-300"
-        to={link.link}
-      >
-        {link.icon}
-      </Link>
+      <Link to={link.link}>{link.icon}</Link>
     </div>
   ));
   return (

@@ -2,7 +2,7 @@ import Map from "./map";
 
 const Contact = () => {
   return (
-    <div className="grid grid-cols-7 shadow-md">
+    <div className="md:grid grid-cols-7 grid-cols-1 md:shadow-md bg-primary/10 mt-16">
       <div className="col-span-3 flex flex-col gap-10 p-10">
         <div>
           <h2 className="font-bold text-primary">Address</h2>

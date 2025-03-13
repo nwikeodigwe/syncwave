@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="w-1/2 mx-auto">
+    <div className="container px-10 md:w-1/2 md:px-0 w-full mx-auto">
       <form action="" className="flex flex-col gap-10">
         <div className="flex flex-col gap-10">
           <h1 className="title text-4xl text-center text-primary">
@@ -97,7 +97,9 @@ const Form = () => {
           <p className="text-center text-sm text-gray-500">
             By clicking "Book", you agree to our terms and conditions
           </p>
-          <button className="btn btn-primary btn-full">Book</button>
+          <button className="btn btn-primary btn-full hover:scale-105 transition-all duration-300">
+            Book
+          </button>
         </div>
       </form>
     </div>

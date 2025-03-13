@@ -65,17 +65,19 @@ const faqs = [
 const Faq = () => {
   const faqList = faqs.map((faq, index) => <Tab key={index} faq={faq} />);
   return (
-    <section className="faq flex flex-col gap-16">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="title text-4xl font-bold text-primary">Quick FAQs</h1>
-      </div>
-      <div className="container max-w-screen-lg mx-auto">
-        <div className="columns-1 sm:columns-2 md: column-2 lg:columns-2 gap-8">
-          {faqList}
+    <section className="flex flex-col gap-16">
+      <div className="container flex flex-col gap-16 mx-auto px-10">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="title text-4xl font-bold text-primary">Quick FAQs</h1>
         </div>
-      </div>
-      <div className="flex flex-col justify-center items-center gap-4">
-        <p>Have more questions? Get in touch with us,</p>
+        <div className="container max-w-screen-lg mx-auto">
+          <div className="columns-1 md: column-2 lg:columns-2 gap-8">
+            {faqList}
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-4">
+          <p>Have more questions? Get in touch with us,</p>
+        </div>
       </div>
     </section>
   );

@@ -3,24 +3,27 @@ import { Link } from "react-router";
 
 const PhotoVideo = () => {
   return (
-    <div className="grid grid-cols-5">
+    <div className="grid grid-cols-5 text-sm">
       <div className="col-span-5 flex flex-col items-center justify-center p-5 bg-primary text-white">
-        <h1 className="uppercase text-2xl font-bold font-bungee">
+        <h1 className="uppercase text-xl md:text-2xl  font-bold font-bungee">
           Photo/Video
         </h1>
       </div>
-      <div className="col-span-2 border-b-1 border-dashed border-gray-500"></div>
-      <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <h2>No engineer</h2>
-        <p>(3hr minimum)</p>
-      </div>
-      <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <h2 className="text-center">w Advanced Engineer</h2>
-        <p>(2 hr minimum)</p>
-      </div>
-      <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <h2>w/ Elite Engineer</h2>
-        <p>(2hr minimum)</p>
+
+      <div className="col-span-5 grid-cols-5 hidden md:grid">
+        <div className="col-span-2 border-b-1 border-dashed border-gray-500"></div>
+        <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
+          <h2>No engineer</h2>
+          <p>(3hr minimum)</p>
+        </div>
+        <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
+          <h2 className="text-center">w Advanced Engineer</h2>
+          <p>(2 hr minimum)</p>
+        </div>
+        <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
+          <h2>w/ Elite Engineer</h2>
+          <p>(2hr minimum)</p>
+        </div>
       </div>
 
       <div className="flex items-center col-span-2 border-b-1 border-dashed border-gray-500">
@@ -90,7 +93,10 @@ const PhotoVideo = () => {
         <p>$89</p>
       </div>
       <div className="col-span-5 flex justify-center mt-16">
-        <Link to="/bookings/photo_video" className="btn btn-transparent">
+        <Link
+          to="/bookings/photo_video"
+          className="btn btn-transparent text-xl"
+        >
           Book Now
         </Link>
       </div>

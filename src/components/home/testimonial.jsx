@@ -49,7 +49,7 @@ export default function Testimonial() {
   ));
   return (
     <section className="testimonial mt-20">
-      <div className="container max-w-screen-lg mx-auto flex flex-col gap-24">
+      <div className="container max-w-screen-lg mx-auto px-10 flex flex-col gap-24">
         <h1 className="title text-4xl text-center text-primary">
           What our clients say
         </h1>

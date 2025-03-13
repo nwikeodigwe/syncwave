@@ -6,7 +6,7 @@ import Player from "./player";
 const View = () => {
   return (
     <section className="samples">
-      <div className="container max-w-screen-lg mx-auto flex flex-col gap-8">
+      <div className="container max-w-screen-lg mx-auto flex flex-col gap-8 px-10">
         <h1 className="title text-4xl text-center text-primary">Samples</h1>
         <Read />
         <Samples />

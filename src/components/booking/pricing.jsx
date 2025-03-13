@@ -6,7 +6,7 @@ import PhotoVideo from "./PhotoVideo";
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-20 mt-16">
       <SmokeFreeStudio />
       <BulkPackages />
       <PodcastRecording />

@@ -3,9 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <section className="about mt-20">
-      <div className="container max-w-screen-lg mx-auto">
-        <div className="grid grid-cols-5 gap-5">
-          <div className="flex flex-col col-span-3 gap-16 leading-tight">
+      <div className="container px-10 md:max-w-screen-lg mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
+          <div className="flex flex-col md:col-span-3 gap-16 leading-tight">
             <h1 className="title text-4xl font-bold text-primary">About</h1>
             <div className="flex flex-col gap-4">
               <p>
@@ -27,7 +27,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-recording ">
-            <div className="hover:bg-transparent bg-black/30 transition-all duration-300 backdrop-grayscale hover:backdrop-grayscale-0 h-[350px] w-[350px] rounded-full"></div>
+            <div className="hover:bg-transparent bg-primary/30 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0 h-[350px] w-[350px] rounded-full"></div>
           </div>
         </div>
       </div>

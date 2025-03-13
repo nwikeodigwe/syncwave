@@ -7,8 +7,8 @@
 @theme {
   --font-courier: "Courier Prime", monospace;
   --font-bungee: "Bungee", cursive;
-  --color-primary: #5e1be3;
-  --color-secondary: #363636;
+  --color-primary: #561ebc;
+  --color-secondary: #1e0944;
   --color-facebook: #1877f2;
   --color-instagram: #e1306c;
   --color-twitter: #1da1f2;
@@ -16,6 +16,7 @@
   --color-tiktok: #010101;
   --color-spotify: #1db954;
   --color-applemusic: #ff0436;
+  --font-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 :root {
@@ -23,16 +24,7 @@
 }
 
 body {
-  @apply font-courier text-secondary;
-}
-
-.hero {
-  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0id2hpdGUiLz48L3N2Zz4="),
-    auto;
-}
-
-.overlay {
-  @apply absolute h-full w-full inset-0 bg-primary/60;
+  @apply font-courier text-secondary bg-primary/10;
 }
 
 section {
@@ -44,7 +36,7 @@ section {
 }
 
 .title {
-  @apply font-bungee font-bold;
+  @apply font-bungee font-bold drop-shadow-2xl;
 }
 .nav-list {
   display: flex;

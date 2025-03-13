@@ -2,9 +2,9 @@ import React from "react";
 
 const Card = ({ testimonial }) => {
   return (
-    <div className="inline-block w-full shadow-md rounded-2xl b">
-      <figure className="g-gray/10 text-primary p-8 text-sm leading-6 flex flex-col">
-        <blockquote className="text-primary flex-grow">
+    <div className="inline-block w-full shadow-md rounded-sm bg-primary/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+      <figure className="p-8 text-sm leading-6 flex flex-col">
+        <blockquote className="font-bold flex-grow">
           <p>"{testimonial.text}"</p>
         </blockquote>
 
@@ -13,11 +13,11 @@ const Card = ({ testimonial }) => {
             <img
               src={testimonial.image}
               alt={testimonial.name}
-              className="h-10 w-10 rounded-full border-2 border-primary"
+              className="h-10 w-10 rounded-full border-2 border-secondary"
             />
           </div>
           <div className="flex flex-col">
-            <p className="font-bold">{testimonial.name}</p>
+            <p className="font-extrabold">{testimonial.name}</p>
             <p className="text-sm">{testimonial.username}</p>
           </div>
         </figcaption>

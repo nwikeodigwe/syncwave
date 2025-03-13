@@ -32,7 +32,11 @@ const Samples = () => {
   const samples = sampleWorks.map((sample, index) => (
     <Player key={index} sample={sample} />
   ));
-  return <div className="grid grid-cols-3 my-16 gap-1">{samples}</div>;
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 my-16 gap-4 md:gap-1">
+      {samples}
+    </div>
+  );
 };
 
 export default Samples;

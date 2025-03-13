@@ -30,8 +30,8 @@ const Jumbotron = () => {
   ));
 
   return (
-    <section className="jumbrotron h-16 bg-[#f0f0f0]">
-      <div className="container max-w-screen-lg mx-auto">
+    <section className="jumbrotron h-16 bg-primary/10">
+      <div className="container max-w-screen-lg mx-auto px-10">
         <ul className="flex items-center gap-4 text-sm font-bold text-primary">
           {jumbolinks}
         </ul>

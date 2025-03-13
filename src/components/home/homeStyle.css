@@ -1,15 +1,7 @@
 @import "tailwindcss";
 
-.socials {
-  @apply flex justify-between items-center my-3;
-}
-
-.socials-list {
-  @apply flex gap-4;
-}
-
-.socials-list li {
-  @apply text-4xl;
+.hero {
+  @apply cursor-pointer bg-[url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJtYmNlNHo3Y3kxZnVvYjlhMmYxcjg0c3ZlOXQ3YWx3ZDlna3lnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41YzzaGIkro0Jmq4/giphy.gif)] bg-no-repeat bg-cover bg-center text-white;
 }
 
 .about {

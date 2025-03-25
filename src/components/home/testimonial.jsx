@@ -48,12 +48,13 @@ export default function Testimonial() {
     </div>
   ));
   return (
-    <section className="testimonial mt-20">
-      <div className="container max-w-screen-lg mx-auto px-10 flex flex-col gap-24">
-        <h1 className="title text-4xl text-center text-primary">
-          What our clients say
+    <section className="testimonial relative">
+      <div className="testimonial-image"></div>
+      <div className="container flex flex-col gap-24 py-16">
+        <h1 className="text-4xl text-center text-primary">
+          <span>What our clients say</span>
         </h1>
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-8 z-20">
           {testimonialCard}
         </div>
       </div>

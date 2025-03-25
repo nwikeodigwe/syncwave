@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import Header from "./header";
 import Footer from "./footer";
-
+import Socials from "./socials";
 const links = [
   { href: "/", text: "Home" },
   { href: "/gallery", text: "Gallery" },
@@ -13,6 +13,7 @@ const Layout = () => {
     <>
       <Header links={links} />
       <Outlet />
+      <Socials />
       <Footer links={links} />
     </>
   );

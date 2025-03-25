@@ -20,9 +20,12 @@ const View = () => {
     <img key={index} src={image.src} alt={image.alt} />
   ));
   return (
-    <section className="">
-      <div className="container max-w-screen-lg mx-auto flex flex-col gap-8 px-10">
-        <h1 className="title text-4xl text-center text-primary">Gallery</h1>
+    <section className="gallery relative">
+      <div className="skyline"></div>
+      <div className="container flex flex-col gap-8 px-10">
+        <h1>
+          <span>Gallery</span>
+        </h1>
         <p className="text-center">
           Explore the exciting world of GMB Recording Studio, known as the
           top-rated recording studio in Capetown, through our engaging photo

@@ -65,15 +65,13 @@ const faqs = [
 const Faq = () => {
   const faqList = faqs.map((faq, index) => <Tab key={index} faq={faq} />);
   return (
-    <section className="flex flex-col gap-16">
-      <div className="container flex flex-col gap-16 mx-auto px-10">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="title text-4xl font-bold text-primary">Quick FAQs</h1>
-        </div>
-        <div className="container max-w-screen-lg mx-auto">
-          <div className="columns-1 md: column-2 lg:columns-2 gap-8">
-            {faqList}
-          </div>
+    <section className="faq relative py-16">
+      <div className="container flex flex-col gap-16">
+        <h1 className="text-4xl font-bold text-center">
+          <span>Quick FAQs</span>
+        </h1>
+        <div className="columns-1 md:columns-2 lg:columns-2 gap-4">
+          {faqList}
         </div>
         <div className="flex flex-col justify-center items-center gap-4">
           <p>Have more questions? Get in touch with us,</p>

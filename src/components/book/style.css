@@ -1,0 +1,45 @@
+.book {
+  @apply py-16 flex flex-col gap-8;
+  background: rgb(41, 40, 40);
+  background: linear-gradient(
+    61deg,
+    rgba(41, 40, 40, 1) 81%,
+    rgba(55, 37, 87, 1) 88%,
+    rgba(65, 35, 121, 1) 93%,
+    rgba(86, 30, 188, 1) 100%
+  );
+}
+
+.book h1 {
+  @apply relative text-4xl text-center;
+}
+
+.book h1 span {
+  @apply relative;
+}
+
+.book h1 span::after {
+  @apply content-[''] absolute -bottom-2 left-2/6 w-[40%] h-2 rounded-full bg-chrysler-blue;
+}
+
+.booking-form {
+  @apply max-w-screen-sm mx-auto z-1000;
+}
+
+.booking-form form {
+  @apply flex flex-col gap-10;
+}
+
+.booking-form form fieldset {
+  @apply flex flex-col gap-4 z-30;
+}
+
+.booking-form form fieldset label {
+  @apply text-timberwolf-300 font-semibold;
+}
+
+.booking-form input,
+select {
+  all: unset;
+  @apply border-b-2 border-b-timberwolf-900 p-4 focus:border-chrysler-blue bg-raisin-black-600 transition-all duration-300 rounded-sm;
+}

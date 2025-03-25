@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const PhotoVideo = () => {
   return (
     <div className="grid grid-cols-5 text-sm">
-      <div className="col-span-5 flex flex-col items-center justify-center p-5 bg-primary text-white">
+      <div className="col-span-5 flex flex-col items-center justify-center p-5 text-white pricing-gradient">
         <h1 className="uppercase text-xl md:text-2xl  font-bold font-bungee">
           Photo/Video
         </h1>
@@ -30,39 +30,39 @@ const PhotoVideo = () => {
         <p className="font-bold">Standard Rate</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p className="font-bold">$49</p>
+        <p className="font-bold">R1,000</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p className="font-bold">$79</p>
+        <p className="font-bold">R1,500</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p className="font-bold">$89</p>
+        <p className="font-bold">R1,700</p>
       </div>
 
       <div className="flex items-center col-span-2 border-b-1 border-dashed border-gray-500">
         <p>4hr+ (Mon-Wed only)</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$49</p>
+        <p>R1,000</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$79</p>
+        <p>R1,500</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$89</p>
+        <p>R1,700</p>
       </div>
 
       <div className="flex items-center col-span-2 border-b-1 border-dashed border-gray-500">
         <p>6hr+ (Thu-Sun only)</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$49</p>
+        <p>R1,000</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$79</p>
+        <p>R1,500</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$89</p>
+        <p>R1,700</p>
       </div>
 
       <div className="flex items-center col-span-2 border-b-1 border-dashed border-gray-500">
@@ -70,13 +70,13 @@ const PhotoVideo = () => {
         <p>12am-9am</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$49</p>
+        <p>R1,000</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$79</p>
+        <p>R1,500</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$89</p>
+        <p>R1,700</p>
       </div>
 
       <div className="flex items-center col-span-2 border-b-1 border-dashed border-gray-500">
@@ -84,19 +84,16 @@ const PhotoVideo = () => {
         <p>12am-9am</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$49</p>
+        <p>R1,000</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$79</p>
+        <p>R1,500</p>
       </div>
       <div className="flex flex-col items-center justify-center p-5 border-b-1 border-dashed border-gray-500">
-        <p>$89</p>
+        <p>R1,700</p>
       </div>
       <div className="col-span-5 flex justify-center mt-16">
-        <Link
-          to="/bookings/photo_video"
-          className="btn btn-transparent text-xl hover:-translate-y-1 transition-all duration-300"
-        >
+        <Link to="/bookings/photo_video" className="pricing-button">
           Book Now
         </Link>
       </div>

@@ -10,13 +10,13 @@ const Read = () => {
           readMore && "h-24 overflow-hidden"
         }`}
       >
-        <p className="text-clip">
+        <p className="text-clip text-center">
           MIX Recording Studio, the best recording studio in Los Angeles, CA,
           offers a wide range of audio production services, including music and
           podcast production. It is a creative hub where artists of all
           backgrounds unite to craft exceptional sonic experiences.
         </p>
-        <p>
+        <p className="text-center">
           At MIX, we take pride in the diverse range of audio production
           services. From podcasts to different music genres, such as hip-hop,
           pop, rock and EDM, we welcome you, ensuring that every artist's unique
@@ -24,7 +24,7 @@ const Read = () => {
           and producers is well-versed in these services, guaranteeing a
           seamless creative journey.
         </p>
-        <p>
+        <p className="text-center">
           Our recording studio in Los Angeles, CA, is committed to nurturing
           talent at all levels. Whether you're just getting started or have
           already mastered the charts, we offer a welcoming environment that
@@ -32,14 +32,14 @@ const Read = () => {
           technology and expert team will elevate your work, keeping your music
           or podcast ahead of the competition.
         </p>
-        <p>
+        <p className="text-center">
           If you're new to the industry, you may have questions about the
           recording process, equipment, studio environment, and etiquette. We're
           here to help you relax before your recording session. At every step of
           the way, our recording studio in Los Angeles, CA, aims to create a
           relaxed and enjoyable experience.
         </p>
-        <p>
+        <p className="text-center">
           As we prepare for the release, we invite you to join us to get a
           glimpse of behind-the-scenes. Witness the magic happen at our
           recording studio when talented artists, producers, and engineers
@@ -47,7 +47,7 @@ const Read = () => {
           inspiration to the final mixing and mastering touches, we'll walk you
           through the intricate process of turning dreams into reality.
         </p>
-        <p>
+        <p className="text-center">
           MIX Recording Studio, your go-to music and podcast studio in Los
           Angeles, invites you to explore our website and listen to our work to
           get a sense of what we do. We're here to support and elevate your
@@ -60,7 +60,7 @@ const Read = () => {
       <div className="flex item-center justify-center mt-10">
         <button
           onClick={() => setReadMore(!readMore)}
-          className="btn btn-transparent"
+          className="w-[200px] border-2 border-chrysler-blue text-white py-4 px-4 rounded-sm text-center uppercase font-[300] hover:-translate-y-1 transition-all duration-300 z-20"
         >
           {readMore ? "Read more" : "Read less"}
         </button>

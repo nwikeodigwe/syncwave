@@ -4,8 +4,12 @@ import Contact from "./contact";
 
 const View = () => {
   return (
-    <section className="book">
-      <div className="container flex flex-col gap-16 max-w-screen-lg mx-auto">
+    <section className="book relative">
+      <div className="skyline"></div>
+      <div className="container">
+        <h1 className="text-4xl text-center mb-4">
+          <span>Book session</span>
+        </h1>
         <Form />
         <Contact />
       </div>

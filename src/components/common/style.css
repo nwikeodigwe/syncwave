@@ -1,0 +1,93 @@
+header {
+  @apply fixed top-0 left-0 right-0 md:border-b-1 md:border-raisin-black-500/90 backdrop-blur-3xl;
+}
+
+header svg {
+  @apply text-white text-3xl cursor-pointer z-100;
+}
+
+.logo {
+  @apply z-100;
+}
+
+.logo h1 {
+  @apply uppercase text-2xl w-[8ch];
+}
+
+.logo span {
+  @apply text-chrysler-blue;
+}
+
+header nav.desktop {
+  @apply hidden md:block;
+}
+
+.nav-backdrop {
+  @apply fixed flex justify-end md:hidden top-0 left-0 right-0 h-screen bg-black/10 backdrop-blur-xs z-40;
+}
+
+nav.mobile {
+  @apply flex flex-col justify-start pt-40 w-[80%] h-full;
+  background: rgb(41, 40, 40);
+  background: linear-gradient(
+    143deg,
+    rgba(41, 40, 40, 1) 4%,
+    rgba(55, 37, 87, 1) 54%,
+    rgba(65, 35, 121, 1) 74%,
+    rgba(86, 30, 188, 1) 94%
+  );
+}
+
+.nav-links {
+  @apply flex flex-col md:flex-row uppercase text-white;
+}
+
+.nav-link {
+  @apply font-[200] text-xl h-full px-10 py-7 md:border-x-1 border-raisin-black-500/90 transition-all duration-300 md:border-b-4 border-b-transparent hover:border-b-chrysler-blue text-center;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-socials {
+  @apply flex justify-between items-center gap-4 mx-auto mt-16;
+}
+
+.nav-socials svg {
+  @apply h-10 w-10 text-timberwolf-400/50;
+}
+
+.jumbotron {
+  @apply h-[200px] flex items-end pb-10;
+  background-color: #561ebc;
+  background-image: linear-gradient(
+    238deg,
+    #561ebc 0%,
+    #292828 35%,
+    #292828 100%
+  );
+}
+
+.socials {
+  @apply hidden md:flex flex-col gap-4 fixed bottom-10 left-10 z-30;
+}
+
+.socials a {
+  @apply cursor-pointer;
+}
+
+.socials svg {
+  @apply hover:-translate-y-1 transition-all duration-300 h-10 w-10 text-timberwolf-700;
+}
+
+.footer {
+  background: rgb(41, 40, 40);
+  background: linear-gradient(
+    0deg,
+    rgba(41, 40, 40, 1) 60%,
+    rgba(52, 38, 75, 1) 90%,
+    rgba(61, 36, 105, 1) 94%,
+    rgba(86, 30, 188, 1) 95%
+  );
+}

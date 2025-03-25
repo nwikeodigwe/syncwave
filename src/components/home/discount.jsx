@@ -2,16 +2,16 @@ import { Link } from "react-router";
 
 const Discount = () => {
   return (
-    <section className="discount h-full">
-      <div className="container mx-auto px-10">
-        <div className="absolute h-full w-full inset-0 bg-radial from-black/10 from-10% to-black backdrop-blur-sm"></div>
+    <section className="discount">
+      <div className="discount-image"></div>
+      <div className="container">
         <div className="flex flex-col items-center justify-center gap-10 z-10">
-          <h1 className="text-4xl font-bold font-bungee drop-shadow-2xl backdrop-blur-sm text-center">
+          <h1 className="text-5xl font-bold font-bungee backdrop-blur-sm text-center">
             Discount and weeknights sessions
           </h1>
           <Link
             to="/bookings"
-            className="btn btn-primary btn-lg shadow-2xl hover:-translate-y-1 transition-all duration-300 z-10"
+            className="w-[200px] py-5 text-white border-2 border-chrysler-blue rounded-sm text-center uppercase font-thin text-lg hover:-translate-y-1 transition-all duration-300 z-10"
           >
             Explore deals
           </Link>

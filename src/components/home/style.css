@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+.hero {
+  @apply flex justify-end items-end pb-20 relative;
+  background-color: #561ebc;
+  background-image: linear-gradient(
+    238deg,
+    #561ebc 0%,
+    #292828 35%,
+    #292828 100%
+  );
+}
+
+.hero-content {
+  @apply flex flex-col items-center md:items-start md:justify-start;
+}
+
+.hero h1 {
+  @apply font-bold uppercase drop-shadow-lg md:max-w-[15ch] leading-tight text-5xl md:text-6xl relative text-center md:text-left mb-10 md:mb-0;
+}
+
+.hero h1 span {
+  @apply opacity-50 relative;
+}
+
+.hero h1 span::after {
+  @apply content-[''] absolute -bottom-1 left-2/6 md:left-0 bg-chrysler-blue h-2 w-[40%] rounded-full;
+}
+.hero p {
+  @apply text-timberwolf/80 mt-5 text-xl md:w-[50ch] font-[300] text-center md:text-left;
+}
+
+.hero .call-to-action {
+  @apply text-white text-xl font-[300] leading-4 px-10 py-5 rounded-sm drop-shadow-lg inline-block uppercase text-center mt-10 w-[200px] hover:-translate-y-1 transition-all duration-300 z-10;
+  background: rgb(86, 30, 188);
+  background: linear-gradient(
+    142deg,
+    rgba(86, 30, 188, 1) 34%,
+    rgba(52, 18, 113, 1) 60%,
+    rgba(27, 9, 59, 1) 66%,
+    rgba(17, 6, 38, 1) 93%
+  );
+}
+
+.hero .hero-image {
+  @apply absolute bg-[url('/svg/music.svg')] bottom-0 right-0 w-full h-full bg-contain bg-center bg-no-repeat z-10 opacity-5;
+}
+
+.about {
+  @apply flex relative overflow-x-clip;
+}
+
+@media (max-width: 768px) {
+  .about::before {
+    @apply content-[''] absolute top-0 left-0 right-0 w-full h-full;
+    background: rgb(41, 40, 40);
+    background: linear-gradient(
+      180deg,
+      rgba(41, 40, 40, 1) 50%,
+      rgba(43, 40, 46, 0.061303745130864895) 96%
+    );
+  }
+}
+
+.about img {
+  @apply h-full md:w-[300%] grayscale absolute md:top-0 top-50 right-0 md:left-[60%] object-cover -z-1;
+}
+
+@media (max-width: 768px) {
+}
+
+.about-image {
+  @apply absolute bg-[url('/images/studio.jpg')] top-0 right-4/6 bg-no-repeat bg-cover bg-bottom z-10 opacity-5;
+}
+
+.discount {
+  @apply relative h-screen flex flex-col justify-center items-center text-white;
+  background: rgb(41, 40, 40);
+  background: linear-gradient(
+    78deg,
+    rgba(41, 40, 40, 1) 84%,
+    rgba(86, 30, 188, 1) 100%
+  );
+}
+
+.discount .discount-image {
+  @apply absolute bg-[url('/svg/city.svg')] bottom-0 right-0 w-full h-full bg-[length:100%_50%] bg-bottom bg-no-repeat z-10 opacity-5;
+}
+
+.testimonial {
+  @apply flex flex-col gap-4 relative;
+  background: rgb(41, 40, 40);
+  background: linear-gradient(
+    146deg,
+    rgba(41, 40, 40, 1) 71%,
+    rgba(86, 30, 188, 1) 100%
+  );
+}
+
+.testimonial h1 {
+  @apply relative;
+}
+
+.testimonial h1 span {
+  @apply relative;
+}
+
+.testimonial h1 span::before {
+  @apply content-[''] absolute top-12 right-1/3 bg-chrysler-blue h-2 w-[40%] rounded-full;
+}
+
+.testimonial .testimonial-image {
+  @apply absolute bg-[url('/svg/testimonial.svg')] bottom-0 right-0 w-full h-full bg-[length:50%_100%] bg-left-bottom bg-no-repeat opacity-5 z-1;
+}
+
+.faq {
+  @apply relative;
+  background: rgb(41, 40, 40);
+  background: -moz-linear-gradient(
+    37deg,
+    rgba(41, 40, 40, 1) 54%,
+    rgba(52, 38, 75, 1) 66%,
+    rgba(61, 36, 105, 1) 89%,
+    rgba(86, 30, 188, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    37deg,
+    rgba(41, 40, 40, 1) 54%,
+    rgba(52, 38, 75, 1) 66%,
+    rgba(61, 36, 105, 1) 89%,
+    rgba(86, 30, 188, 1) 100%
+  );
+  background: linear-gradient(
+    37deg,
+    rgba(41, 40, 40, 1) 54%,
+    rgba(52, 38, 75, 1) 66%,
+    rgba(61, 36, 105, 1) 89%,
+    rgba(86, 30, 188, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292828",endColorstr="#561ebc",GradientType=1);
+}
+
+.faq h1 {
+  @apply relative;
+}
+
+.faq h1 span {
+  @apply relative;
+}
+
+.faq h1 span::after {
+  @apply content-[''] absolute top-12 right-1/3 bg-chrysler-blue h-2 w-[40%] rounded-full;
+}
+
+.tab {
+  @apply flex flex-col;
+}
+
+.tab .tab-title {
+  @apply flex gap-1 cursor-pointer items-center p-4;
+}
+
+.tab > .tab-title > h2 {
+  @apply text-base font-bold;
+}
+
+.tab .content {
+  @apply flex flex-col gap-4 p-4 border border-gray-500;
+}
+
+.tab .tab-content p {
+  @apply text-base;
+}

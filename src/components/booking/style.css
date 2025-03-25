@@ -1,0 +1,38 @@
+.booking {
+  @apply flex flex-col gap-8 py-16 bg-no-repeat bg-cover bg-center;
+  background: rgb(41, 40, 40);
+  background: linear-gradient(
+    61deg,
+    rgba(41, 40, 40, 1) 87%,
+    rgba(55, 37, 87, 1) 92%,
+    rgba(65, 35, 121, 1) 96%,
+    rgba(86, 30, 188, 1) 100%
+  );
+}
+
+.booking h1 {
+  @apply relative text-4xl text-center;
+}
+
+.booking h1 span {
+  @apply relative;
+}
+
+.booking h1 span::after {
+  @apply content-[''] absolute -bottom-2 left-2/6 w-[40%] h-2 rounded-full bg-chrysler-blue;
+}
+
+.pricing-gradient {
+  background: rgb(86, 30, 188);
+  background: linear-gradient(
+    61deg,
+    rgba(86, 30, 188, 1) 54%,
+    rgba(65, 35, 121, 1) 71%,
+    rgba(55, 37, 87, 1) 77%,
+    rgba(41, 40, 40, 1) 94%
+  );
+}
+
+.pricing-button {
+  @apply w-[200px] text-center border-2 border-chrysler-blue text-white font-[300] text-xl py-4 uppercase hover:-translate-y-1 transition-all duration-300 z-20 rounded-sm;
+}

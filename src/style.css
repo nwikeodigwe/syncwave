@@ -62,6 +62,10 @@
   @apply leading-4 font-normal;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   @apply h-screen bg-raisin-black-500 text-timberwolf-500;
 }

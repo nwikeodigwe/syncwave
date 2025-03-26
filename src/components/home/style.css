@@ -1,14 +1,5 @@
-@import "tailwindcss";
-
 .hero {
-  @apply flex justify-end items-end pb-20 relative;
-  background-color: #561ebc;
-  background-image: linear-gradient(
-    238deg,
-    #561ebc 0%,
-    #292828 35%,
-    #292828 100%
-  );
+  @apply flex justify-end items-end pb-20 relative bg-[linear-gradient(238deg,_#561ebc_0%,_#292828_35%,_#292828_100%)];
 }
 
 .hero-content {
@@ -31,15 +22,7 @@
 }
 
 .hero .call-to-action {
-  @apply text-white text-xl font-[300] leading-4 px-10 py-5 rounded-sm drop-shadow-lg inline-block uppercase text-center mt-10 w-[200px] hover:-translate-y-1 transition-all duration-300 z-10;
-  background: rgb(86, 30, 188);
-  background: linear-gradient(
-    142deg,
-    rgba(86, 30, 188, 1) 34%,
-    rgba(52, 18, 113, 1) 60%,
-    rgba(27, 9, 59, 1) 66%,
-    rgba(17, 6, 38, 1) 93%
-  );
+  @apply text-white text-xl font-[300] leading-4 px-10 py-5 rounded-sm drop-shadow-lg inline-block uppercase text-center mt-10 w-[200px] hover:-translate-y-1 hover:shadow-md hover:shadow-chrysler-blue/10 transition-all duration-300 z-10 bg-[linear-gradient(90deg,_rgba(86,30,188,1)_0%,_rgba(151,151,153,1)_3%,_rgba(74,33,146,1)_3%,_rgba(63,35,111,1)_45%,_rgba(50,38,70,1)_58%,_rgba(48,38,64,1)_70%,_rgba(41,40,40,1)_85%)];
 }
 
 .hero .hero-image {
@@ -52,13 +35,7 @@
 
 @media (max-width: 768px) {
   .about::before {
-    @apply content-[''] absolute top-0 left-0 right-0 w-full h-full;
-    background: rgb(41, 40, 40);
-    background: linear-gradient(
-      180deg,
-      rgba(41, 40, 40, 1) 50%,
-      rgba(43, 40, 46, 0.061303745130864895) 96%
-    );
+    @apply content-[''] absolute top-0 left-0 right-0 w-full h-full bg-[linear-gradient(142deg,_rgba(86,30,188,1)_34%,_rgba(52,18,113,1)_60%,_rgba(27,9,59,1)_66%,_rgba(17,6,38,1)_93%)];
   }
 }
 
@@ -74,13 +51,7 @@
 }
 
 .discount {
-  @apply relative h-screen flex flex-col justify-center items-center text-white;
-  background: rgb(41, 40, 40);
-  background: linear-gradient(
-    78deg,
-    rgba(41, 40, 40, 1) 84%,
-    rgba(86, 30, 188, 1) 100%
-  );
+  @apply relative h-screen flex flex-col justify-center items-center text-white bg-[linear-gradient(14deg,_rgba(41,40,40,1)_32%,_rgba(49,38,67,1)_71%,_rgba(64,35,117,1)_98%,_rgba(86,30,188,1)_100%)];
 }
 
 .discount .discount-image {
@@ -88,13 +59,7 @@
 }
 
 .testimonial {
-  @apply flex flex-col gap-4 relative;
-  background: rgb(41, 40, 40);
-  background: linear-gradient(
-    146deg,
-    rgba(41, 40, 40, 1) 71%,
-    rgba(86, 30, 188, 1) 100%
-  );
+  @apply flex flex-col gap-4 relative bg-[linear-gradient(146deg,_rgba(41,40,40,1)_71%,_rgba(86,30,188,1)_100%)];
 }
 
 .testimonial h1 {
@@ -114,30 +79,7 @@
 }
 
 .faq {
-  @apply relative;
-  background: rgb(41, 40, 40);
-  background: -moz-linear-gradient(
-    37deg,
-    rgba(41, 40, 40, 1) 54%,
-    rgba(52, 38, 75, 1) 66%,
-    rgba(61, 36, 105, 1) 89%,
-    rgba(86, 30, 188, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    37deg,
-    rgba(41, 40, 40, 1) 54%,
-    rgba(52, 38, 75, 1) 66%,
-    rgba(61, 36, 105, 1) 89%,
-    rgba(86, 30, 188, 1) 100%
-  );
-  background: linear-gradient(
-    37deg,
-    rgba(41, 40, 40, 1) 54%,
-    rgba(52, 38, 75, 1) 66%,
-    rgba(61, 36, 105, 1) 89%,
-    rgba(86, 30, 188, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#292828",endColorstr="#561ebc",GradientType=1);
+  @apply relative bg-[linear-gradient(37deg,_rgba(41,40,40,1)_54%,_rgba(52,38,75,1)_66%,_rgba(61,36,105,1)_89%,_rgba(86,30,188,1)_100%)];
 }
 
 .faq h1 {

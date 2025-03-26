@@ -4,10 +4,10 @@ const About = () => {
   return (
     <section className="about">
       <div className="container">
-        <div className="flex flex-col gap-4 max-w-[70ch] relative pt-16 pb-42 mb:py-16">
+        <div className="flex flex-col gap-4 max-w-[70ch] relative pt-16 pb-42 md:py-16">
           <h1 className="title text-4xl font-bold text-white mb-10">About</h1>
           <p>
-            The Soundcast recording studio is our mixing and tracking hub. We
+            The gmb syncwave recording studio is our mixing and tracking hub. We
             pride ourselves on providing a comfortable and creative space for
             any recording session.
           </p>

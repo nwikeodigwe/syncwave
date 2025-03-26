@@ -23,8 +23,14 @@ const Header = (props) => {
     setIsOpen(false);
   }, [location.pathname]);
 
-  const navLinks = props.links.map((link, index) => (
-    <NavLink key={index} to={link.href} className="nav-link">
+  const navLinks = props.links.map((link, i) => (
+    <NavLink
+      key={i}
+      to={link.href}
+      className={`${
+        location.pathname == link.href ? "nav-link--active" : "nav-link"
+      }`}
+    >
       {link.text}
     </NavLink>
   ));

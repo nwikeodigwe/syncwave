@@ -11,26 +11,27 @@ const Read = () => {
         }`}
       >
         <p className="text-clip text-center">
-          MIX Recording Studio, the best recording studio in Los Angeles, CA,
-          offers a wide range of audio production services, including music and
-          podcast production. It is a creative hub where artists of all
-          backgrounds unite to craft exceptional sonic experiences.
+          GMB syncwave recording studio is one of the best recording studio in
+          Capetown South Africa, offering a wide range of audio production
+          services, including music and podcast production. It is a creative hub
+          where artists of all backgrounds unite to craft exceptional sonic
+          experiences.
         </p>
         <p className="text-center">
-          At MIX, we take pride in the diverse range of audio production
-          services. From podcasts to different music genres, such as hip-hop,
-          pop, rock and EDM, we welcome you, ensuring that every artist's unique
-          voice finds its perfect platform. Our team of experienced engineers
-          and producers is well-versed in these services, guaranteeing a
-          seamless creative journey.
+          At gmb syncwave, we take pride in the diverse range of audio
+          production services. From podcasts to different music genres, such as
+          hip-hop, pop, rock and EDM, we welcome you, ensuring that every
+          artist's unique voice finds its perfect platform. Our team of
+          experienced engineers and producers is well-versed in these services,
+          guaranteeing a seamless creative journey.
         </p>
         <p className="text-center">
-          Our recording studio in Los Angeles, CA, is committed to nurturing
-          talent at all levels. Whether you're just getting started or have
-          already mastered the charts, we offer a welcoming environment that
-          encourages exploration and growth. For seasoned artists, our top-tier
-          technology and expert team will elevate your work, keeping your music
-          or podcast ahead of the competition.
+          Our recording studio in Capetown South Africa, is committed to
+          nurturing talent at all levels. Whether you're just getting started or
+          have already mastered the charts, we offer a welcoming environment
+          that encourages exploration and growth. For seasoned artists, our
+          top-tier technology and expert team will elevate your work, keeping
+          your music or podcast ahead of the competition.
         </p>
         <p className="text-center">
           If you're new to the industry, you may have questions about the
@@ -48,13 +49,14 @@ const Read = () => {
           through the intricate process of turning dreams into reality.
         </p>
         <p className="text-center">
-          MIX Recording Studio, your go-to music and podcast studio in Los
-          Angeles, invites you to explore our website and listen to our work to
-          get a sense of what we do. We're here to support and elevate your
-          vision if you're ready to embark on a creative journey unlike any
-          other. Our services are reasonably priced, with studio rental rates
-          beginning at $19 per hour. Contact us today to discuss your project
-          and join our growing list of recent works.
+          GMB syncwave recording studio, your go-to music and podcast studio in
+          Capetown South Africa, invites you to explore our website and listen
+          to our work to get a sense of what we do. We're here to support and
+          elevate your vision if you're ready to embark on a creative journey
+          unlike any other. Our services are reasonably priced, with studio
+          rental rates beginning at $19 per hour. Contact us today to discuss
+          your project and join our growing list of recent works. and join our
+          growing list of recent works.
         </p>
       </div>
       <div className="flex item-center justify-center mt-10">

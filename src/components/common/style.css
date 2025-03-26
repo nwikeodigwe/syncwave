@@ -27,15 +27,7 @@ header nav.desktop {
 }
 
 nav.mobile {
-  @apply flex flex-col justify-start pt-40 w-[80%] h-full;
-  background: rgb(41, 40, 40);
-  background: linear-gradient(
-    143deg,
-    rgba(41, 40, 40, 1) 4%,
-    rgba(55, 37, 87, 1) 54%,
-    rgba(65, 35, 121, 1) 74%,
-    rgba(86, 30, 188, 1) 94%
-  );
+  @apply flex flex-col justify-start pt-40 w-[80%] h-full bg-[linear-gradient(143deg,_rgb(41,40,40)_4%,_rgb(55,37,87)_54%,_rgb(65,35,121)_74%,_rgb(86,30,188)_94%)];
 }
 
 .nav-links {
@@ -43,11 +35,15 @@ nav.mobile {
 }
 
 .nav-link {
-  @apply font-[200] text-xl h-full px-10 py-7 md:border-x-1 border-raisin-black-500/90 transition-all duration-300 md:border-b-4 border-b-transparent hover:border-b-chrysler-blue text-center;
+  @apply font-[200] text-xl h-full px-10 py-7 md:border-x-1 transition-all duration-300 hover:border-b-chrysler-blue/20 text-center  border-raisin-black-500/90 hover:border-b-4;
+}
+
+.nav-link--active {
+  @apply font-[200] text-xl h-full px-10 py-7 md:border-x-1 transition-all duration-300 md:border-b-4 hover:border-b-chrysler-blue/50 text-center  border-raisin-black-500/90 border-b-chrysler-blue;
 }
 
 .nav-list li {
-  list-style: none;
+  @apply list-none;
 }
 
 .nav-socials {
@@ -59,14 +55,7 @@ nav.mobile {
 }
 
 .jumbotron {
-  @apply h-[200px] flex items-end pb-10;
-  background-color: #561ebc;
-  background-image: linear-gradient(
-    238deg,
-    #561ebc 0%,
-    #292828 35%,
-    #292828 100%
-  );
+  @apply h-[200px] flex items-end pb-10 bg-[linear-gradient(50deg,_rgba(41,40,40,1)_62%,_rgba(48,38,64,1)_69%,_rgba(50,38,70,1)_71%,_rgba(63,35,111,1)_76%,_rgba(74,33,146,1)_83%,_rgba(86,30,188,1)_90%)];
 }
 
 .socials {
@@ -78,16 +67,9 @@ nav.mobile {
 }
 
 .socials svg {
-  @apply hover:-translate-y-1 transition-all duration-300 h-10 w-10 text-timberwolf-700;
+  @apply hover:-translate-y-1 hover:shadow-md hover:shadow-chrysler-blue/10 transition-all duration-300 h-10 w-10 text-timberwolf-700;
 }
 
 .footer {
-  background: rgb(41, 40, 40);
-  background: linear-gradient(
-    0deg,
-    rgba(41, 40, 40, 1) 60%,
-    rgba(52, 38, 75, 1) 90%,
-    rgba(61, 36, 105, 1) 94%,
-    rgba(86, 30, 188, 1) 95%
-  );
+  @apply bg-[linear-gradient(0deg,_rgba(41,40,40,1)_60%,_rgba(52,38,75,1)_90%,_rgba(61,36,105,1)_94%,_rgba(86,30,188,1)_95%)];
 }

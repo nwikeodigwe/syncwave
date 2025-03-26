@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ testimonial }) => {
   return (
-    <div className="inline-block w-full shadow-md rounded-sm bg-chrysler-blue-900 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+    <div className="inline-block w-full shadow-md rounded-sm bg-chrysler-blue-600/10 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
       <figure className="p-8 text-sm leading-6 flex flex-col">
         <blockquote className="font-bold flex-grow blockquote">
           <p className="text-timberwolf-300">{testimonial.text}</p>

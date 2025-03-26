@@ -1,13 +1,5 @@
 .samples {
-  @apply flex flex-col gap-8 py-16;
-  background: rgb(41, 40, 40);
-  background: linear-gradient(
-    61deg,
-    rgba(41, 40, 40, 1) 81%,
-    rgba(55, 37, 87, 1) 88%,
-    rgba(65, 35, 121, 1) 93%,
-    rgba(86, 30, 188, 1) 100%
-  );
+  @apply flex flex-col gap-8 py-16 bg-[linear-gradient(61deg,_rgba(41,40,40,1)_81%,_rgba(55,37,87,1)_88%,_rgba(65,35,121,1)_93%,_rgba(86,30,188,1)_100%)];
 }
 
 .samples h1 {

@@ -1,13 +1,5 @@
 .booking {
-  @apply flex flex-col gap-8 py-16 bg-no-repeat bg-cover bg-center;
-  background: rgb(41, 40, 40);
-  background: linear-gradient(
-    61deg,
-    rgba(41, 40, 40, 1) 87%,
-    rgba(55, 37, 87, 1) 92%,
-    rgba(65, 35, 121, 1) 96%,
-    rgba(86, 30, 188, 1) 100%
-  );
+  @apply flex flex-col gap-8 py-16 bg-no-repeat bg-cover bg-center bg-[linear-gradient(61deg,_rgba(41,40,40,1)_87%,_rgba(55,37,87,1)_92%,_rgba(65,35,121,1)_96%,_rgba(86,30,188,1)_100%)];
 }
 
 .booking h1 {
@@ -23,14 +15,7 @@
 }
 
 .pricing-gradient {
-  background: rgb(86, 30, 188);
-  background: linear-gradient(
-    61deg,
-    rgba(86, 30, 188, 1) 54%,
-    rgba(65, 35, 121, 1) 71%,
-    rgba(55, 37, 87, 1) 77%,
-    rgba(41, 40, 40, 1) 94%
-  );
+  @apply bg-[linear-gradient(61deg,_rgba(86,30,188,1)_54%,_rgba(65,35,121,1)_71%,_rgba(55,37,87,1)_77%,_rgba(41,40,40,1)_94%)];
 }
 
 .pricing-button {

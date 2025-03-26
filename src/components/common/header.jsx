@@ -4,6 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useLocation } from "react-router";
 import { NavLink, Link } from "react-router";
 import { socialLinks } from "../../constants/socials.jsx";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +46,13 @@ const Header = (props) => {
   return (
     <>
       <header className="z-100">
-        <div className="container">
+        <motion.div
+          className="container"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
           <div className="logo">
             <h1>
               gmb <span>syncwave</span>
@@ -59,7 +67,7 @@ const Header = (props) => {
           >
             {isOpen ? <IoClose /> : <GiHamburgerMenu />}
           </button>
-        </div>
+        </motion.div>
       </header>
       {isOpen && (
         <div className="nav-backdrop">

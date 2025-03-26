@@ -1,4 +1,6 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const galleryImages = [
   {
@@ -22,7 +24,13 @@ const View = () => {
   return (
     <section className="gallery relative">
       <div className="skyline"></div>
-      <div className="container flex flex-col gap-8 px-10">
+      <motion.div
+        className="container flex flex-col gap-8 px-10"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <h1>
           <span>Gallery</span>
         </h1>
@@ -72,7 +80,7 @@ const View = () => {
           whether you're laying down your first track or your latest hit, MIX
           Recording Studio is where your musical journey takes flight.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

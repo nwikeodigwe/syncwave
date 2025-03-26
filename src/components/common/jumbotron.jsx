@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const Jumbotron = () => {
   let links = [{ href: "/", text: "Home" }];
@@ -37,9 +39,15 @@ const Jumbotron = () => {
   return (
     <section className="jumbotron">
       <div className="container">
-        <ul className="flex items-center gap-4 text-sm uppercase font-[300]">
+        <motion.ul
+          className="flex items-center gap-4 text-sm uppercase font-[300]"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
           {jumbolinks}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );

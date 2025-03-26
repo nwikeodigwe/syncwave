@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "../common/card";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const testimonials = [
   {
@@ -50,14 +52,20 @@ export default function Testimonial() {
   return (
     <section className="testimonial relative">
       <div className="testimonial-image"></div>
-      <div className="container flex flex-col gap-24 py-16">
+      <motion.div
+        className="container flex flex-col gap-24 py-16"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <h1 className="text-4xl text-center text-primary">
           <span>What our clients say</span>
         </h1>
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-8 z-20">
           {testimonialCard}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

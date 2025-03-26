@@ -1,5 +1,8 @@
 import React from "react";
 import Tab from "./tab";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
+
 const faqs = [
   {
     title: "How much do you charge",
@@ -66,7 +69,13 @@ const Faq = () => {
   const faqList = faqs.map((faq, index) => <Tab key={index} faq={faq} />);
   return (
     <section className="faq relative py-16">
-      <div className="container flex flex-col gap-16">
+      <motion.div
+        className="container flex flex-col gap-16"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <h1 className="text-4xl font-bold text-center">
           <span>Quick FAQs</span>
         </h1>
@@ -76,7 +85,7 @@ const Faq = () => {
         <div className="flex flex-col justify-center items-center gap-4">
           <p>Have more questions? Get in touch with us,</p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

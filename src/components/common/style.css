@@ -70,6 +70,6 @@ nav.mobile {
   @apply hover:-translate-y-1 hover:shadow-md hover:shadow-chrysler-blue/10 transition-all duration-300 h-10 w-10 text-timberwolf-700;
 }
 
-.footer {
+footer {
   @apply bg-[linear-gradient(0deg,_rgba(41,40,40,1)_60%,_rgba(52,38,75,1)_90%,_rgba(61,36,105,1)_94%,_rgba(86,30,188,1)_95%)];
 }

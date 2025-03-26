@@ -2,12 +2,20 @@ import React from "react";
 import Samples from "./samples";
 import Read from "./read";
 import Player from "./player";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const View = () => {
   return (
     <section className="samples relative">
       <div className="skyline"></div>
-      <div className="container flex flex-col gap-8">
+      <motion.div
+        className="container flex flex-col gap-8"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+      >
         <h1 className="text-4xl text-center relative">
           <span>Samples</span>
         </h1>
@@ -18,7 +26,7 @@ const View = () => {
           new level of creativity and innovation, allowing us to create, produce
           and facilitate some of the best content out there!
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 };

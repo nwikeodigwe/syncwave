@@ -1,11 +1,19 @@
 import { Link } from "react-router";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const Discount = () => {
   return (
     <section className="discount">
       <div className="discount-image"></div>
       <div className="container">
-        <div className="flex flex-col items-center justify-center gap-10 z-10">
+        <motion.div
+          className="flex flex-col items-center justify-center gap-10 z-10"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
           <h1 className="text-5xl font-bold font-bungee backdrop-blur-sm text-center">
             Discount and weeknights sessions
           </h1>
@@ -15,7 +23,7 @@ const Discount = () => {
           >
             Explore deals
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
